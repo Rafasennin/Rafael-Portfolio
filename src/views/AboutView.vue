@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <!-- Seção de Apresentação -->
+    <LoginComponent />
     <v-row class="text-center">
       <v-col cols="12">
         <h1>Rafael Portfolio</h1>
@@ -12,7 +12,7 @@
     <MenuBannerComponent />
     <v-row>
             <v-col cols="12" class="text-center">
-                <h1>Sobre</h1>
+              <h1 class="home__title">Bem-vindo ao meu portfólio.</h1>
             </v-col>
         </v-row>
     <ArticleComponent />
@@ -67,12 +67,13 @@
 import MenuBannerComponent from "../components/MenuBanner.vue";
 import ArticleComponent from "../components/ArticleComponent.vue"
 import FooterComponent from "../components/FooterComponent.vue"
+import LoginComponent from '../components/LoginComponent.vue'
 
 export default {
-  name: 'HomeView',
+  name: 'AboutView',
 
   components: {
-    MenuBannerComponent, ArticleComponent, FooterComponent
+    MenuBannerComponent, ArticleComponent, FooterComponent, LoginComponent
   },
 
   data() {

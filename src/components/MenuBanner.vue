@@ -2,14 +2,14 @@
     <v-container class="mt-5">
       <v-layout class="overflow-visible" style="height: 60px;">
         <v-bottom-navigation class="black h-100" mode="shift">
-          <v-btn :to="linkHome" class="text-decoration-none">
+          <v-btn :to="linkAbout" class="text-decoration-none">
             <v-icon>mdi-home</v-icon>
             <h1 class="text-h6 d-none d-sm-inline-block">Home</h1>
           </v-btn>
   
-          <v-btn :to="linkAbout" class="text-decoration-none">
-            <v-icon>mdi-information</v-icon>
-            <h1 class="text-h6 d-none d-sm-inline-block">Sobre</h1>
+          <v-btn :to="linkHome" class="text-decoration-none">
+            <v-icon>mdi-briefcase</v-icon>
+            <h1 class="text-h6 d-none d-sm-inline-block">Projetos</h1>
           </v-btn>
   
           <v-btn :to="linkContact" class="text-decoration-none">
@@ -32,7 +32,7 @@
     name: 'MenuBanner',
     data() {
       return {
-        linkHome: "/",
+        linkHome: "/home",
         linkAbout: "/about",
         linkContact: "/contact",
         linkAdmin: "/admin"

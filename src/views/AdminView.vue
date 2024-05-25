@@ -1,5 +1,6 @@
 <template>
   <v-container>
+    <LoginComponent />
     <v-row class="text-center">
       <v-col cols="12">
         <h1>Rafael Portfolio</h1>
@@ -10,7 +11,7 @@
 
     <v-row class="text-center">
       <v-col cols="12">
-        <h1>Seção do Administrador</h1>
+        <h1 class="mb-5">Seção do Administrador</h1>
       </v-col>
     </v-row>
 
@@ -80,6 +81,7 @@
 import axios from "axios";
 import MenuBannerComponent from "../components/MenuBanner.vue";
 import FooterComponent from "../components/FooterComponent.vue";
+import LoginComponent from '../components/LoginComponent.vue'
 
 export default {
   name: "AdminView",
@@ -87,6 +89,7 @@ export default {
   components: {
     MenuBannerComponent,
     FooterComponent,
+    LoginComponent
   },
 
   data() {

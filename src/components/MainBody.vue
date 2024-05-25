@@ -75,7 +75,7 @@ export default {
                 url: 'https://mister-fortune-english-git-main-rafasennin.vercel.app/'
             },
             {
-                title: 'Cabelo + Barba',
+                title: 'Calculadora Javascript',
                 src: require('../assets/calculator-thubnail.png'),
                 flex: 6,
                 text: 'Esta é uma aplicação de calculadora simples desenvolvida em JavaScript, HTML e CSS. Ela permite realizar operações matemáticas básicas como adição, subtração, multiplicação e divisão. A interface da calculadora é composta por um display para mostrar os números e o resultado das operações, além de teclas numéricas e de operações para realizar os cálculos.',
