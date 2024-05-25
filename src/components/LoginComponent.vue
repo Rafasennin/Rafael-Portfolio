@@ -40,7 +40,7 @@
       },
   
       logOut() {
-        this.$router.push('/about')
+        this.$router.push('/')
         EventBus.isAuthenticated = false;
       }
     }

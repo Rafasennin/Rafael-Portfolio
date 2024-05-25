@@ -33,7 +33,7 @@
     data() {
       return {
         linkHome: "/home",
-        linkAbout: "/about",
+        linkAbout: "/",
         linkContact: "/contact",
         linkAdmin: "/admin"
       };

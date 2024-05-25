@@ -34,7 +34,7 @@ const routes = [
     beforeEnter: Authorization
   },
   {
-    path: '/about',
+    path: '/',
     name: 'about',
     component: AboutView
   },

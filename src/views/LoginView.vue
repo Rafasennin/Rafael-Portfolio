@@ -5,7 +5,8 @@
                 <v-text-field v-model="email" label="E-mail" :rules="emailRules"  required ></v-text-field>
                 <v-text-field v-model="password" label="Senha" :rules="passwordRules"  required></v-text-field>
                 <div class="d-flex flex-column">
-                    <v-btn class="mt-4 mb-2" color="success" block @click="validate">Logar</v-btn>
+                    <v-btn color="success" block @click="validate">Logar</v-btn>
+                    <v-btn :to="linkAbout"  class="mt-4 mb-2" color="primary text-decoration-none" >Voltar</v-btn>
                 </div>
             </v-form>
         </v-sheet>
@@ -17,6 +18,7 @@
 import EventBus from "../helpers/EventBus";
 export default {
     data: () => ({
+        linkAbout: "/",
         email: 'rafasennin@hotmail.com',
         emailRules: [
             value => {
@@ -56,11 +58,11 @@ export default {
                             console.log("Valor de isAuthenticated:", EventBus.isAuthenticated);
                         } else {
                             // Senha inválida
-                            alert('Senha inválida. Por favor, verifique as regras de senha.');
+                            alert('Senha inválida. Por favor, contate o administrador.');
                         }
                     } else {
                         // E-mail não cadastrado
-                        alert('Usuário não cadastrado, contacte o administrador.');
+                        alert('Usuário não cadastrado, contate o administrador.');
                     }
                 } else {
                     // E-mail inválido
