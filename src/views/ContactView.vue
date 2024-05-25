@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="bg-black">
     <LoginComponent />
     <v-row class="text-center">
       <v-col cols="12">

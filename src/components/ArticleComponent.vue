@@ -24,7 +24,7 @@
             possibilidades no mundo da tecnologia. Estou em busca de oportunidades para me desenvolver e estou aberto a
             propostas que me permitam aprender e contribuir para projetos.
         </p><br>
-        <v-divider></v-divider>
+        <v-divider :thickness="1" class="border-opacity-50 mb-5 mt-5" color="black"></v-divider>
     </v-container>
 </template>
 

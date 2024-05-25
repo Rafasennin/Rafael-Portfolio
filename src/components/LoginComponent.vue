@@ -1,6 +1,6 @@
 
 <template>
-    <v-container>
+    <v-container class="bg-black">
       <div v-if="loginStatus" class="d-flex justify-end">
         <v-btn color="red-darken-2" @click="logOut">
           <v-icon icon="mdi-arrow-left" start></v-icon>
