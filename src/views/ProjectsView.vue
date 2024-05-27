@@ -1,6 +1,5 @@
 <template>
   <v-container class="bg-black">
-    <LoginComponent />
     <v-row class="text-center">
       <v-col cols="12">
         <h1>Rafael Portfolio</h1>
@@ -16,15 +15,14 @@
 <script>
 import MenuBannerComponent from "../components/MenuBanner.vue";
 import ProjectsComponent from "../components/ProjectsComponent.vue";
-import FooterComponent from "../components/FooterComponent.vue"
-import LoginComponent from '../components/LoginComponent.vue'
+import FooterComponent from "../components/FooterComponent.vue";
 
 
 export default ({
   name: 'ProjectsView',
 
   components: {
-    MenuBannerComponent, ProjectsComponent, FooterComponent, LoginComponent
+    MenuBannerComponent, ProjectsComponent, FooterComponent
   },
 
   data() {

@@ -1,6 +1,5 @@
 <template>
   <v-container class="bg-black">
-    <LoginComponent />
     <v-row class="text-center">
       <v-col cols="12">
         <h1>Rafael Portfolio</h1>
@@ -44,15 +43,13 @@
 import MenuBannerComponent from "../components/MenuBanner.vue";
 import FooterComponent from "../components/FooterComponent.vue";
 import axios from "axios";
-import LoginComponent from '../components/LoginComponent.vue'
 
 export default {
   name: 'ContactView',
 
   components: {
     MenuBannerComponent,
-    FooterComponent,
-    LoginComponent
+    FooterComponent
   },
 
   data() {
