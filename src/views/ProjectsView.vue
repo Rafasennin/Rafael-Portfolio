@@ -8,23 +8,23 @@
       </v-col>
     </v-row>
     <MenuBannerComponent />
-    <MainBodyComponent />
+    <ProjectsComponent />
     <FooterComponent />
   </v-container>
 </template>
 
 <script>
 import MenuBannerComponent from "../components/MenuBanner.vue";
-import MainBodyComponent from "../components/MainBody.vue";
+import ProjectsComponent from "../components/ProjectsComponent.vue";
 import FooterComponent from "../components/FooterComponent.vue"
 import LoginComponent from '../components/LoginComponent.vue'
 
 
 export default ({
-  name: 'HomeView',
+  name: 'ProjectsView',
 
   components: {
-    MenuBannerComponent, MainBodyComponent, FooterComponent, LoginComponent
+    MenuBannerComponent, ProjectsComponent, FooterComponent, LoginComponent
   },
 
   data() {

@@ -32,8 +32,8 @@
     name: 'MenuBanner',
     data() {
       return {
-        linkHome: "/home",
         linkAbout: "/",
+        linkHome: "/projects",
         linkContact: "/contact",
         linkAdmin: "/admin"
       };

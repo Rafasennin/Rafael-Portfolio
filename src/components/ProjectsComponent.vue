@@ -63,7 +63,34 @@ export default {
                 title: 'Cortes & Navalhas',
                 src: require('../assets/cortes-e-navalhas.png'),
                 flex: 12,
-                text: 'Projeto realizado para uma barbearia utlizando o frame work Vue 3, vue-router e vuetify-3.',
+                text: `Esta é uma plataforma de agendamento de serviços, desenvolvida com Vue.js.
+                        Sobre o Projeto:
+                        O objetivo deste projeto foi criar uma plataforma intuitiva e fácil de usar para agendar serviços de beleza. Desde o início, 
+                        concentrei-me em desenvolver uma interface de usuário dinâmica e responsiva, permitindo que os usuários naveguem facilmente pelos serviços disponíveis,
+                         escolham seus profissionais preferidos e agendem seus compromissos com facilidade.
+                        Tecnologias Utilizadas:
+                        - Vue.js: Como framework principal, o Vue.js foi a escolha natural devido à sua flexibilidade e eficiência na criação de interfaces de usuário interativas.
+
+                        - Vue Router: Utilizei o Vue Router para gerenciar as diferentes rotas da aplicação, garantindo uma experiência de navegação suave.
+
+                        - Componentes Vue Reutilizáveis: Organizei o código em componentes Vue reutilizáveis, o que facilitou a manutenção e a expansão do projeto.
+
+                        - Vuetify: Para a estilização, optei pelo Vuetify, um framework de componentes Vue.js que oferece uma ampla gama de elementos de interface do usuário pré-projetados e responsivos.
+
+                        - Codificação de Informações para Rotas: Implementei a codificação de informações para passá-las pelas rotas da aplicação, garantindo a segurança e a integridade dos dados transmitidos.
+
+                        Habilidades Demonstradas:
+                        - Domínio do Vue.js: Este projeto me permitiu aprofundar meu conhecimento em Vue.js, fortalecendo minhas habilidades na construção de aplicações web dinâmicas.
+
+                        - Gestão de Rotas com Vue Router: Utilizei o Vue Router para criar uma experiência de navegação fluida, garantindo que os usuários possam acessar facilmente as diferentes seções da plataforma.
+
+                        - Estilização com Vuetify: A aplicação de estilos com o Vuetify me permitiu criar uma interface de usuário atraente e responsiva, melhorando significativamente a experiência do usuário.
+
+                        - Trabalho com Dados de Forma Segura: Implementei técnicas de codificação de dados para garantir a segurança e a integridade das informações transmitidas pela aplicação.
+
+                        Criar este projeto destacou a versatilidade e eficiência do Vue.js na construção de aplicações web responsivas de forma otimizada, dinâmica e com uma estrutura segura em relação aos dados. 
+                        É importante ressaltar que o componente de pagamento é apenas uma representação, sendo necessário utilizar uma API segura, como Mercado Pago ou Pagar.me. Além disso, 
+                        o próximo passo será a implementação do cadastro de usuários, integrado ao banco de dados mondodb.`,
                 url: 'https://projeto-de-software-one.vercel.app/#/'
 
             },
@@ -106,9 +133,9 @@ export default {
         shareLink() {
             if (navigator.share) {
                 navigator.share({
-                    title: 'Projeto ddo portfolio Rafael Santos',
-                    text: 'Compartilhando um projeto d ededenvolvimento web full-stack',
-                    url: 'https://exemplo.com',
+                    title: 'Projeto do portfolio Rafael Santos',
+                    text: 'Compartilhando um projeto de desenvolvimento web full-stack',
+                    url: 'http://rafael-portfolio-azure.vercel.app/#/projects',
                 }).then(() => {
                     console.log('Conteúdo compartilhado com sucesso!');
                 }).catch((error) => {
