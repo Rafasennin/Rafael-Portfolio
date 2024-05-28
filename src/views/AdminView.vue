@@ -16,46 +16,45 @@
     </v-row>
 
     <v-table theme="dark" class="overflow-x-auto">
-  <thead>
-    <tr>
-      <th class="text-h5">
-        ID
-      </th>
-      <th class="text-h5">
-        Nome
-      </th>
-      <th class="text-h5">
-        Email
-      </th>
-      <th class="text-h5">
-        Mensagem
-      </th>
-    </tr>
-  </thead>
+      <thead>
+        <tr>
+          <th class="text-h5">
+            ID
+          </th>
+          <th class="text-h5">
+            Nome
+          </th>
+          <th class="text-h5">
+            Email
+          </th>
+          <th class="text-h5">
+            Mensagem
+          </th>
+        </tr>
+      </thead>
 
-  <tbody>
-    <tr class="text-center" v-for="contato in contatos" :key="contato._id">
-      <td>
-        {{ contato._id }}
-      </td>
-      <td>
-        {{ contato.name }}
-      </td>
-      <td>
-        {{ contato.email }}
-      </td>
-      <td class="word-wrap-break">
-        {{ contato.message }}
-      </td>
-    </tr>
-  </tbody>
-</v-table>
-
-    <v-row class="text-center">
-      <v-col cols="12">
-        <v-btn color="primary" class="my-5" @click="getContatos">Fetch mongo data</v-btn>
-      </v-col>
-    </v-row>
+      <tbody>
+        <tr class="text-center" v-for="contato in contatos" :key="contato._id">
+          <td>
+            {{ contato._id }}
+          </td>
+          <td>
+            {{ contato.name }}
+          </td>
+          <td>
+            {{ contato.email }}
+          </td>
+          <td class="word-wrap-break">
+            {{ contato.message }}
+          </td>
+          <td>
+            <v-btn @click="deleteContat(contato._id)"  class="text-decoration-none bg-red-darken-4">
+              <v-icon>mdi-delete</v-icon>
+            </v-btn>
+          </td>
+        </tr>
+      </tbody>
+    </v-table>
 
     <FooterComponent />
   </v-container>
@@ -89,12 +88,23 @@ export default {
   methods: {
     async getContatos() {
       try {
-        const response = await axios.get("https://vercel-backend-sable-omega.vercel.app/contatos");
+        const response = await axios.get("https://vercel-backend-8xcixk8e5-rafasennins-projects.vercel.app/contatos");
         this.contatos = response.data;
       } catch (error) {
         console.error("Erro ao buscar contatos:", error);
       }
     },
+
+    async deleteContat(contatoId) {
+      try {
+        await axios.delete(`https://vercel-backend-sable-omega.vercel.app/contatos/${contatoId}`);
+        // Atualizar a lista de contatos após a exclusão
+        this.getContatos();
+      } catch (error) {
+        console.error("Erro ao excluir contato:", error);
+      }
+    },
+
   },
 };
 </script>
