@@ -16,10 +16,11 @@
 
 <script>
 import EventBus from "../helpers/EventBus";
+import SecretPsw from "../secret";
 export default {
     data: () => ({
         linkAbout: "/",
-        email: 'rafasennin@hotmail.com',
+        email: '',
         emailRules: [
             value => {
                 if (value) return true
@@ -32,7 +33,7 @@ export default {
                 return 'O E-mail deve ser válido.'
             },
         ],
-        password: 'Senha123',
+        password: '',
         passwordRules: [
             value => !!value || 'A senha é necessária.',
             value => /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/.test(value) || `
@@ -50,7 +51,7 @@ export default {
                 if (emailValid) {
                     if (this.email == "rafasennin@hotmail.com") {
                         const passwordValid = this.passwordRules.every(rule => rule(this.password) === true);
-                        if (passwordValid) {
+                        if (passwordValid && SecretPsw === this.password) {
                             // Autenticado com sucesso, redirecionar para a página de login
                             this.$router.push("/admin");
                             // Disparar o evento isAuthenticated para true

@@ -98,8 +98,6 @@ export default {
     async deleteContat(contatoId) {
       try {
         console.log('ID do contato:', contatoId);
-        //`https://vercel-backend-8xcixk8e5-rafasennins-projects.vercel.app/contatos/${contatoId}`
-        
         await axios.delete(`https://rafael-portfolio-back-end.vercel.app/contatos/${contatoId}`);
         // Atualizar a lista de contatos após a exclusão
         this.getContatos();
