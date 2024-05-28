@@ -67,9 +67,9 @@ export default {
         value => /.+@.+\..+/.test(value) || 'O E-mail deve ser válido.'
       ],
       contato: {
-        name: "Rafael",
-        email: "rafasennin@gmail.com",
-        message: "Teste vuex"
+        name: "",
+        email: "",
+        message: ""
       }
     };
   },
