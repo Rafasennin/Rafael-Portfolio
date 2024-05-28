@@ -89,7 +89,7 @@ export default {
   methods: {
     async getContatos() {
       try {
-        const response = await axios.get("http://localhost:8080/contatos");
+        const response = await axios.get("https://vercel-backend-sable-omega.vercel.app/contatos");
         this.contatos = response.data;
       } catch (error) {
         console.error("Erro ao buscar contatos:", error);
