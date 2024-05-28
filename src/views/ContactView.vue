@@ -32,6 +32,9 @@
               <v-btn color="primary" @click="sendContact">Enviar</v-btn>
             </v-col>
           </v-row>
+          <v-row>
+            <v-progress-linear v-if="isLoading" indeterminate color="primary"></v-progress-linear>
+          </v-row>
         </v-form>
       </v-col>
     </v-row>
@@ -43,6 +46,7 @@
 import MenuBannerComponent from "../components/MenuBanner.vue";
 import FooterComponent from "../components/FooterComponent.vue";
 import axios from "axios";
+import { mapState, mapMutations } from 'vuex';
 
 export default {
   name: 'ContactView',
@@ -63,20 +67,25 @@ export default {
         value => /.+@.+\..+/.test(value) || 'O E-mail deve ser válido.'
       ],
       contato: {
-        name: "",
-        email: "",
-        message: ""
+        name: "Rafael",
+        email: "rafasennin@gmail.com",
+        message: "Teste vuex"
       }
     };
+  },
+
+  computed: {
+    ...mapState(['isLoading']), // Mapeie o estado de carregamento para o componente
   },
 
   methods: {
     async sendContact() {
       // Verificar se os campos obrigatórios estão preenchidos
       if (this.contato.name && this.contato.email) {
+        this.SET_LOADING(true);
         try {
           await axios.post("https://rafael-portfolio-back-end.vercel.app/contatos", this.contato);
-          this.$router.push({ name: 'admin' });
+          this.$router.push({ name: 'about' });
           console.log("Contato enviado:", this.contato);
         } catch (error) {
           console.error("Erro ao enviar contato:", error);
@@ -84,8 +93,8 @@ export default {
       } else {
         alert("Por favor, preencha todos os campos obrigatórios.");
       }
-    }
-  }
-};
+    },
+    ...mapMutations(['SET_LOADING']), // Mapeie a mutação para o componente
+  }  
+}
 </script>
-
