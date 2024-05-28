@@ -48,7 +48,7 @@
             {{ contato.message }}
           </td>
           <td>
-            <v-btn @click="deleteContat(contato._id)"  class="text-decoration-none bg-red-darken-4">
+            <v-btn @click="deleteContat(contato._id)" class="text-decoration-none bg-red-darken-4">
               <v-icon>mdi-delete</v-icon>
             </v-btn>
           </td>
@@ -88,7 +88,7 @@ export default {
   methods: {
     async getContatos() {
       try {
-        const response = await axios.get("https://vercel-backend-8xcixk8e5-rafasennins-projects.vercel.app/contatos");
+        const response = await axios.get("https://rafael-portfolio-back-end.vercel.app/contatos");
         this.contatos = response.data;
       } catch (error) {
         console.error("Erro ao buscar contatos:", error);
@@ -97,14 +97,16 @@ export default {
 
     async deleteContat(contatoId) {
       try {
-        await axios.delete(`https://vercel-backend-sable-omega.vercel.app/contatos/${contatoId}`);
+        console.log('ID do contato:', contatoId);
+        //`https://vercel-backend-8xcixk8e5-rafasennins-projects.vercel.app/contatos/${contatoId}`
+        
+        await axios.delete(`https://rafael-portfolio-back-end.vercel.app/contatos/${contatoId}`);
         // Atualizar a lista de contatos após a exclusão
         this.getContatos();
       } catch (error) {
         console.error("Erro ao excluir contato:", error);
       }
     },
-
   },
 };
 </script>

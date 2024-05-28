@@ -75,7 +75,7 @@ export default {
       // Verificar se os campos obrigatórios estão preenchidos
       if (this.contato.name && this.contato.email) {
         try {
-          await axios.post("https://vercel-backend-sable-omega.vercel.app/contatos", this.contato);
+          await axios.post("https://rafael-portfolio-back-end.vercel.app/contatos", this.contato);
           this.$router.push({ name: 'admin' });
           console.log("Contato enviado:", this.contato);
         } catch (error) {
