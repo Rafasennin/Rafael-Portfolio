@@ -1,5 +1,5 @@
 <template>
-  <v-container class="bg-black">
+  <v-container class="bg-black"> 
     <v-row class="text-center">
       <v-col cols="12">
         <h1>Rafael Portfolio</h1>
@@ -14,7 +14,7 @@
         <h1>Contato</h1>
       </v-col>
     </v-row>
-
+<v-container>
     <v-row>
       <v-col cols="12">
         <v-form class="mb-10" ref="form">
@@ -38,6 +38,7 @@
         </v-form>
       </v-col>
     </v-row>
+  </v-container>
     <FooterComponent />
   </v-container>
 </template>

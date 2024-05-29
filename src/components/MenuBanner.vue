@@ -1,5 +1,5 @@
 <template>
-    <v-container class="mt-5">
+  <v-container>
       <v-layout class="overflow-visible" style="height: 60px;">
         <v-bottom-navigation class="black h-100" mode="shift">
           <v-btn :to="linkAbout" class="text-decoration-none">

@@ -1,6 +1,6 @@
 <template>
-    <v-container class="mt-n8">
-        <v-dialog v-model="dialog" max-width="600px">
+    <v-container class="mt-n10">
+        <v-dialog v-model="dialog" max-width="auto">
             <v-card>
                 <v-img :src="selectedCard.src" aspect-ratio="16/9" cover></v-img>
                 <v-card-title>{{ selectedCard.title }}</v-card-title>

@@ -1,19 +1,10 @@
 <template>
   <v-container class="bg-black">
-    <v-row class="text-center">
-      <v-col cols="12">
-        <h1>Rafael Portfolio</h1>
-        <p>Desenvolvedor Web Full-Stack</p>
-      </v-col>
-    </v-row>
-
+    <!-- Carousel Component -->
+   <CarouselComponent />
     <!-- Menu Banner -->
     <MenuBannerComponent />
-    <v-row>
-            <v-col cols="12" class="text-center">
-              <h1 class="home__title">Bem-vindo ao meu portfólio.</h1>
-            </v-col>
-        </v-row>
+   
     <ArticleComponent />
 
     <!-- Seção de Sobre -->
@@ -53,12 +44,13 @@
 import MenuBannerComponent from "../components/MenuBanner.vue";
 import ArticleComponent from "../components/ArticleComponent.vue"
 import FooterComponent from "../components/FooterComponent.vue"
+import CarouselComponent from "../components/CarouselComponent.vue"
 
 export default {
   name: 'AboutView',
 
   components: {
-    MenuBannerComponent, ArticleComponent, FooterComponent
+    MenuBannerComponent, ArticleComponent, FooterComponent, CarouselComponent
   },
 
   data() {
