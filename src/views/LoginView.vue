@@ -1,16 +1,48 @@
 <template>
-    <v-container class="bg-grey-darken-4" fluid style="height: 100vh;">
-        <v-sheet class="mx-auto mt-16" width="350" >
+    <v-container class="bg-black d-flex justify-center h-screen" >
+    <v-sheet class="mx-auto mt-16 bg-grey-darken-4 pa-12" width="400" height="430" rounded>
+        <v-card class="mx-auto px-6 py-8" max-width="344">
             <v-form ref="form">
-                <v-text-field v-model="email" label="E-mail" :rules="emailRules"  required ></v-text-field>
-                <v-text-field v-model="password" label="Senha" :rules="passwordRules"  required></v-text-field>
+                <v-text-field prepend-inner-icon="mdi-account" 
+                              v-model="email" 
+                              label="Usuario" 
+                              :rules="emailRules" 
+                              variant="outlined" 
+                              placeholder="Digite o usuario" 
+                              required>
+                </v-text-field>
+                <v-text-field prepend-inner-icon="mdi-lock" 
+                             :append-inner-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
+                             @click:append-inner="togglePasswordVisibility"
+                             :type="showPassword ? 'text' : 'password'"
+                              v-model="password" 
+                              label="Senha"
+                              :rules="passwordRules" 
+                              variant="outlined" 
+                              placeholder="Digite sua senha" 
+                              required>
+                </v-text-field>
                 <div class="d-flex flex-column">
-                    <v-btn color="success" block @click="validate">Logar</v-btn>
-                    <v-btn :to="linkAbout"  class="mt-4 mb-2" color="primary text-decoration-none" >Voltar</v-btn>
+                    <v-btn color="success" 
+                           block @click="validate" 
+                           size="large" 
+                           type="submit"
+                           variant="elevated">
+                            Logar
+                    </v-btn>
+                    <v-btn :to="linkAbout" 
+                           class="mt-4 mb-2" 
+                           color="primary" 
+                           type="submit" 
+                           size="large"
+                           variant="elevated">
+                             Voltar
+                    </v-btn>
                 </div>
             </v-form>
-        </v-sheet>
-    </v-container> 
+        </v-card>
+    </v-sheet>
+</v-container>
 </template>
 
 
@@ -34,6 +66,7 @@ export default {
             },
         ],
         password: '',
+        showPassword: false,
         passwordRules: [
             value => !!value || 'A senha é necessária.',
             value => /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/.test(value) || `
@@ -71,7 +104,11 @@ export default {
                 }
             }
         },
-        
+
+        togglePasswordVisibility(){
+        this.showPassword = !this.showPassword
+
     }
+}
 }
 </script>
