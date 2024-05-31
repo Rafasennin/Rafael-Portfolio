@@ -79,6 +79,11 @@ export default {
     ...mapState(['isLoading']), // Mapeie o estado de carregamento para o componente
   },
 
+  mounted() {
+    // Define isLoading como falso quando o componente for montado
+    this.SET_LOADING(false);
+  },
+  
   methods: {
     async sendContact() {
       // Verificar se os campos obrigatórios estão preenchidos

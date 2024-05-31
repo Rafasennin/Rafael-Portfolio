@@ -3,7 +3,8 @@ import { createStore } from 'vuex'
 export default createStore({
   state: {
     isLoading: false,
-    isLogged: false
+    isLogged: false,
+    isFetching: false
   },
   getters: {
   },
@@ -14,6 +15,10 @@ export default createStore({
 
     SET_LOGGED(state, status){
       state.isLogged = status;
+    },
+
+    SET_FETCHING(state, status){
+      state.isFetching = status
     }
   },
   actions: {

@@ -1,6 +1,6 @@
 <template>
   <v-container class="bg-black">
-    <LoginComponent /> 
+    <LoginComponent />
     <v-row class="text-center">
       <v-col cols="12">
         <h1>Rafael Portfolio</h1>
@@ -19,7 +19,7 @@
       <thead>
         <tr>
           <th class="text-h5">
-            ID 
+            ID
           </th>
           <th class="text-h5">
             Nome
@@ -55,7 +55,10 @@
         </tr>
       </tbody>
     </v-table>
-
+    <tr class="d-flex justify-center">
+      <v-progress-circular v-if="loadingFlag" color="primary" indeterminate model-value="20" :size="74"
+        :width="8"></v-progress-circular>
+    </tr>
     <FooterComponent />
   </v-container>
 </template>
@@ -64,7 +67,9 @@
 import axios from "axios";
 import MenuBannerComponent from "../components/MenuBanner.vue";
 import FooterComponent from "../components/FooterComponent.vue";
-import LoginComponent from '../components/LoginComponent.vue'
+import LoginComponent from '../components/LoginComponent.vue';
+import { mapState, mapMutations } from 'vuex';
+import store from '../store/index';
 
 export default {
   name: "AdminView",
@@ -81,17 +86,42 @@ export default {
     };
   },
 
+  computed: {
+    ...mapState(['isFetching']), // Mapeie o estado de carregamento para o componente
+    loadingFlag() {
+      return this.isFetching;
+    }
+  },
+
   mounted() {
     this.getContatos();
+    this.loadFetching();
   },
 
   methods: {
+    async loadFetching() {
+      try {
+        console.log("o resultado é:" + this.isFetching + store)
+        return this.isFetching;
+      } catch (error) {
+        console.error("Erro ao carregar os dados:", error);
+      }
+    },
+
     async getContatos() {
       try {
+         // Antes de iniciar a busca de contatos, atualiza o estado de isFetching para true
+         this.SET_FETCHING(true);
+
         const response = await axios.get("https://rafael-portfolio-back-end.vercel.app/contatos");
         this.contatos = response.data;
+
+         // Após concluir a busca de contatos, atualiza o estado de isFetching para false
+         this.SET_FETCHING(false);
       } catch (error) {
         console.error("Erro ao buscar contatos:", error);
+        // Em caso de erro, também atualiza o estado de isFetching para false
+        this.SET_FETCHING(false);
       }
     },
 
@@ -99,12 +129,14 @@ export default {
       try {
         console.log('ID do contato:', contatoId);
         await axios.delete(`https://rafael-portfolio-back-end.vercel.app/contatos/${contatoId}`);
-        // Atualizar a lista de contatos após a exclusão
+
+        // Atualiza a lista de contatos após a exclusão
         this.getContatos();
       } catch (error) {
         console.error("Erro ao excluir contato:", error);
       }
     },
+    ...mapMutations(['SET_FETCHING']),
   },
 };
 </script>
