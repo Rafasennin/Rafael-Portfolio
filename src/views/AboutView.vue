@@ -1,11 +1,11 @@
 <template>
   <v-container class="bg-black">
-    
+
     <!-- Carousel Component -->
-   <CarouselComponent />
+    <CarouselComponent />
     <!-- Menu Banner -->
     <MenuBannerComponent />
-   
+    
     <ArticleComponent />
 
     <!-- Seção de Sobre -->
@@ -20,12 +20,12 @@
       <v-col cols="12" md="4" v-for="(item, index) in background" :key="index">
         <v-card>
           <v-card-title class="d-flex justify-center text-body-1 font-weight-black">{{ item.title }}</v-card-title>
-          <v-card-text class="d-flex justify-center">{{item.details}}</v-card-text>
+          <v-card-text class="d-flex justify-center">{{ item.details }}</v-card-text>
         </v-card>
       </v-col>
     </v-row>
     <v-divider :thickness="1" class="border-opacity-50 mb-5 mt-5" color="black"></v-divider>
-   
+
     <!-- Skills -->
     <v-row>
       <v-col cols="12" class="d-flex justify-center">
@@ -60,14 +60,14 @@ export default {
       background: [
         {
           title: 'Analise e Desenvolvimento de Sistemas',
-          details: 'Graduação pela Universidade São Francisco',  
+          details: 'Graduação pela Universidade São Francisco',
         },
         {
           title: 'Bacharel em Farmácia',
-          details: 'Graduação pela Universidade São Francisco',  
+          details: 'Graduação pela Universidade São Francisco',
         }
       ],
-      
+
       technologies: [
         'Node.js',
         'Express.js',
@@ -86,7 +86,7 @@ export default {
   },
 
   methods: {
-    
+
   }
 };
 </script>
