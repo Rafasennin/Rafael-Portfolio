@@ -1,6 +1,6 @@
 <template>
   <v-container class="bg-black">
-    <LoginComponent />
+    <LoginComponent /> 
     <v-row class="text-center">
       <v-col cols="12">
         <h1>Rafael Portfolio</h1>
@@ -19,7 +19,7 @@
       <thead>
         <tr>
           <th class="text-h5">
-            ID
+            ID 
           </th>
           <th class="text-h5">
             Nome

@@ -1,5 +1,6 @@
 <template>
   <v-container class="bg-black">
+    
     <!-- Carousel Component -->
    <CarouselComponent />
     <!-- Menu Banner -->
@@ -45,6 +46,7 @@ import MenuBannerComponent from "../components/MenuBanner.vue";
 import ArticleComponent from "../components/ArticleComponent.vue"
 import FooterComponent from "../components/FooterComponent.vue"
 import CarouselComponent from "../components/CarouselComponent.vue"
+
 
 export default {
   name: 'AboutView',

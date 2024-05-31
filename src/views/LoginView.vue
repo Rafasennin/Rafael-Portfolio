@@ -47,12 +47,13 @@
 
 
 <script>
-import EventBus from "../helpers/EventBus";
+//import EventBus from "../helpers/EventBus";
 import SecretPsw from "../secret";
+import { mapState, mapMutations } from 'vuex';
 export default {
     data: () => ({
         linkAbout: "/",
-        email: '',
+        email: 'rafasennin@hotmail.com',
         emailRules: [
             value => {
                 if (value) return true
@@ -65,7 +66,7 @@ export default {
                 return 'O E-mail deve ser válido.'
             },
         ],
-        password: '',
+        password: 'Sennin007',
         showPassword: false,
         passwordRules: [
             value => !!value || 'A senha é necessária.',
@@ -75,6 +76,10 @@ export default {
             `
         ]
     }),
+
+    computed: {
+    ...mapState(['isLogged']), // Mapeie o estado de carregamento para o componente
+  },
 
     methods: {
         validate() {
@@ -87,9 +92,8 @@ export default {
                         if (passwordValid && SecretPsw === this.password) {
                             // Autenticado com sucesso, redirecionar para a página de login
                             this.$router.push("/admin");
-                            // Disparar o evento isAuthenticated para true
-                            EventBus.isAuthenticated = true;
-                            console.log("Valor de isAuthenticated:", EventBus.isAuthenticated);
+                            // Define o evento isLogged para true
+                            this.SET_LOGGED(true);
                         } else {
                             // Senha inválida
                             alert('Senha inválida. Por favor, contate o administrador.');
@@ -102,13 +106,15 @@ export default {
                     // E-mail inválido
                     alert('E-mail inválido. Por favor, verifique o e-mail inserido.');
                 }
-            }
+            } 
         },
+        
 
         togglePasswordVisibility(){
         this.showPassword = !this.showPassword
 
-    }
+    },
+    ...mapMutations(['SET_LOGGED']),
 }
 }
 </script>

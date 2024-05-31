@@ -50,7 +50,7 @@ import axios from "axios";
 import { mapState, mapMutations } from 'vuex';
 
 export default {
-  name: 'ContactView',
+  name: 'ContactView', 
 
   components: {
     MenuBannerComponent,

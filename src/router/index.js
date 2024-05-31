@@ -4,12 +4,13 @@ import ProjecstView from '../views/ProjectsView.vue';
 import AboutView from '../views/AboutView.vue';
 import ContactView from '../views/ContactView.vue';
 import AdminView from '../views/AdminView.vue';
-import EventBus from '../helpers/EventBus';
 import LoginView from '../views/LoginView.vue'
+import { useStore } from 'vuex';  
 
 function Authorization(to, from, next) {
-  const isAuthenticated = EventBus.isAuthenticated; 
-  if (!isAuthenticated) {
+  const store = useStore();
+  const isLogged = store.state.isLogged; 
+  if (!isLogged) {
     next({ name: 'login' }); // Chamando a próxima rota com o objeto de localização
   } else {
     next(); // Chamando a próxima rota sem parâmetros
