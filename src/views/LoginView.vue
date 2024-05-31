@@ -53,7 +53,7 @@ import { mapState, mapMutations } from 'vuex';
 export default {
     data: () => ({
         linkAbout: "/",
-        email: 'rafasennin@hotmail.com',
+        email: '',
         emailRules: [
             value => {
                 if (value) return true
@@ -66,7 +66,7 @@ export default {
                 return 'O E-mail deve ser válido.'
             },
         ],
-        password: 'Sennin007',
+        password: '',
         showPassword: false,
         passwordRules: [
             value => !!value || 'A senha é necessária.',
