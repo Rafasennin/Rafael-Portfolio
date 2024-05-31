@@ -7,7 +7,7 @@
             </v-col>
         </v-row>
 
-        <v-carousel height="200" :show-arrows="false" cycle hide-delimiters>
+        <v-carousel height="150" :show-arrows="false" cycle hide-delimiters>
             <v-carousel-item v-for="(image, i) in images" :key="i" :src="image.src" cover></v-carousel-item>
         </v-carousel>
     </v-container>
@@ -18,7 +18,7 @@ export default {
         return {
             images: [
                 {
-                src: require('../assets/img_banner/express_img.png')
+                    src: require('../assets/img_banner/express_img.png')
                 },
                 {
                     src: require('../assets/img_banner/javascritp_1.png')
