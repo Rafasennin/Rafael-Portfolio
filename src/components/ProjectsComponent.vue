@@ -108,21 +108,21 @@ export default {
                 text: 'Esta é uma aplicação de calculadora simples desenvolvida em JavaScript, HTML e CSS. Ela permite realizar operações matemáticas básicas como adição, subtração, multiplicação e divisão. A interface da calculadora é composta por um display para mostrar os números e o resultado das operações, além de teclas numéricas e de operações para realizar os cálculos.',
                 url: 'https://rafasennin.github.io/JavaScript-Calculator/'
             },
-        ],
-
-        projetos: [
             {
-                titulo: 'Cortes e Navalhas',
-                descricao: 'Projeto realizado para uma barbearia',
-                imagem: ""
+                title: 'Pokedex',
+                src: require('../assets/pokedex_thumbnail.png'),
+                flex: 6,
+                text: 'Uma API de busca por pokemons.',
+                url: 'https://pokedex-nine-wheat.vercel.app/'
             },
             {
-                titulo: 'Projeto 2',
-                descricao: 'Descrição do projeto 2',
-                imagem: ""
+                title: 'Calculadora de Gorjetas',
+                src: require('../assets/calculadora_gorjetas_thumbnail.png'),
+                flex: 6,
+                text: 'Uma aplicação simples e prática para calcular as gorjetas e divir pelo número de pagantes.',
+                url: 'https://calculadora-de-gorjetas-pi.vercel.app/'
             },
         ],
-
     }),
     methods: {
         openModal(card) {
