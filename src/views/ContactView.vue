@@ -90,9 +90,9 @@ export default {
       if (this.contato.name && this.contato.email) {
         this.SET_LOADING(true);
         try {
-          await axios.post("https://rafael-portfolio-back-end.vercel.app/contatos", this.contato);
+          await axios.post("https://rafael-portfolio-back-end.vercel.app/contatos", this.contato); 
           this.$router.push({ name: 'about' });
-          console.log("Contato enviado:", this.contato);
+          console.log("Contato enviado:");
         } catch (error) {
           console.error("Erro ao enviar contato:", error);
         }
