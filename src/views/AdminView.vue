@@ -116,7 +116,7 @@ export default {
         // Antes de iniciar a busca de contatos, atualiza o estado de isFetching para true
         this.SET_FETCHING(true);
 
-        const response = await axios.get("http://localhost:8080/contatos"); // Trocar por URL deploy
+        const response = await axios.get("https://rafael-portfolio-back-end.vercel.app/contatos"); // Trocar por URL deploy
         this.contatos = response.data;
 
         // Após concluir a busca de contatos, atualiza o estado de isFetching para false

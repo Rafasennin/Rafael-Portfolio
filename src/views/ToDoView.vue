@@ -115,7 +115,7 @@
         try {
           this.SET_FETCHING(true);
 
-          const response = await axios.get("http://localhost:8080/tasks"); // Corrigir para tasks
+          const response = await axios.get("https://rafael-portfolio-back-end.vercel.app/tasks"); // Corrigir para tasks
           this.tasks = response.data;
 
           // Após concluir a busca de contatos, atualiza o estado de isFetching para false
@@ -139,7 +139,7 @@
               date: this.getCurrentDate(),
               content: this.taskContent
             };
-            await axios.post("http://localhost:8080/tasks", task);
+            await axios.post("https://rafael-portfolio-back-end.vercel.app/tasks", task);
             this.getTasks();
           } catch (error) {
             console.error("Erro ao enviar tarefa:", error);
@@ -153,7 +153,7 @@
   
       async deleteTask(taskId) {
         try {
-          await axios.delete(`http://localhost:8080/tasks/${taskId}`);
+          await axios.delete(`https://rafael-portfolio-back-end.vercel.app/tasks/${taskId}`);
 
           // Atualiza a lista de tasks após a exclusão
           this.getTasks();
