@@ -6,6 +6,11 @@
             <v-icon>mdi-home</v-icon>
             <h1 class="text-h6 d-none d-sm-inline-block">Home</h1>
           </v-btn>
+
+          <v-btn :to="linkToDo" class="text-decoration-none">
+            <v-icon>mdi-format-list-checks</v-icon>
+            <h1 class="text-h6 d-none d-sm-inline-block">Lista ToDo</h1>
+          </v-btn>
   
           <v-btn :to="linkHome" class="text-decoration-none">
             <v-icon>mdi-briefcase</v-icon>
@@ -35,7 +40,8 @@
         linkAbout: "/",
         linkHome: "/projects",
         linkContact: "/contact",
-        linkAdmin: "/admin"
+        linkAdmin: "/admin",
+        linkToDo: "/todo"
       };
     }
   };

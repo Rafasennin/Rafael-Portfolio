@@ -4,7 +4,8 @@ import ProjecstView from '../views/ProjectsView.vue';
 import AboutView from '../views/AboutView.vue';
 import ContactView from '../views/ContactView.vue';
 import AdminView from '../views/AdminView.vue';
-import LoginView from '../views/LoginView.vue'
+import LoginView from '../views/LoginView.vue';
+import ToDoView from '../views/ToDoView.vue'
 import { useStore } from 'vuex';  
 
 function Authorization(to, from, next) {
@@ -18,6 +19,11 @@ function Authorization(to, from, next) {
 }
 
 const routes = [
+  {
+    path: '/todo',
+    name: 'todo',
+    component: ToDoView
+  },
   {
     path: '/login',
     name: 'login',

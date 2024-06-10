@@ -2,13 +2,18 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
+    isAdding: false,
     isLoading: false,
     isLogged: false,
-    isFetching: false
+    isFetching: false,
   },
   getters: {
   },
   mutations: {
+    SET_ADDING(state, status){
+      state.isAdding = status;
+    },
+
     SET_LOADING(state, status){
       state.isLoading = status;
     },
