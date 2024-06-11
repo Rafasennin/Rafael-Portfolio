@@ -24,7 +24,7 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-divider :thickness="1" class="border-opacity-50 mb-5 mt-5" color="black"></v-divider>
+    <v-divider :thickness="1" class="border-opacity-50 mb-5 mt-5" color="white"></v-divider>
 
     <!-- Skills -->
     <v-row>
