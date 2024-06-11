@@ -44,6 +44,18 @@
         <v-list-item :to="linkContact" prepend-icon="mdi-email" title="Contato"></v-list-item>
         <v-list-item :to="linkAdmin" prepend-icon="mdi-account-circle" title="Administrador"></v-list-item>
       </v-list>
+      <v-divider :thickness="1" class="border-opacity-50" color="black"></v-divider>
+      <div class="bg-black d-flex align-center">
+        <v-btn v-for="icon in icons" :key="icon" :icon="icon.icoo" :href="icon.src" size="small" variant="plain"
+          target="_blank" class="ml-5"></v-btn>
+      </div>
+      <h3 class="d-flex justify-center">Rafael Santos - Portfolio &copy; </h3>
+
+      <div class="d-flex align-center justify-center">
+        <v-avatar class="ma-10 opacity-80" size="200">
+          <v-img :src="img" aspect-ratio="4/3" fill></v-img>
+        </v-avatar>
+      </div>
     </v-navigation-drawer>
 
     <!-- Cards -->
@@ -70,7 +82,14 @@ export default {
       linkToDo: "/todo",
       drawer: false,
       rail: false,
-      imgAvatar: require('../assets/img_banner/express_img.png')
+      icons: [
+        { icoo: 'mdi-github', src: 'https://github.com/Rafasennin' },
+        { icoo: 'mdi-linkedin', src: 'https://www.linkedin.com/in/rafael-d-santos-24a1098b' },
+        { icoo: 'mdi-instagram', src: 'https://www.instagram.com/rafasennin7/' },
+        { icoo: 'mdi-youtube', src: 'https://youtube.com/channel/UC7cYXH0h-RylVwe6y9JIUIQ' },
+      ],
+
+      img: require("../assets/profile.jpg")
     };
   }
 };
