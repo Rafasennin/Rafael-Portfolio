@@ -9,7 +9,7 @@
 
     <MenuBannerComponent />
 
-    <v-row>
+    <v-row class="mt-2">
       <v-col cols="12" class="text-center">
         <h1>Contato</h1>
       </v-col>

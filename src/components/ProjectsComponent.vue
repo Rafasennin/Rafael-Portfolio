@@ -1,5 +1,5 @@
 <template>
-    <v-container class="mt-n10">
+    <v-container>
         <v-dialog v-model="dialog" max-width="auto">
             <v-card>
                 <v-img :src="selectedCard.src" aspect-ratio="16/9" cover></v-img>
@@ -19,12 +19,12 @@
 
         <!-- Seção de Projetos -->
         <v-row>
-            <v-col cols="12" class="text-center mt-5">
+            <v-col cols="12" class="text-center">
                 <h1>Projetos</h1>
             </v-col>
         </v-row>
 
-        <v-card class="mx-auto" max-width="auto">
+        <v-card class="mx-auto bg-grey-darken-4" max-width="auto">
             <v-container fluid>
                 <v-row dense class="d-flex justify-center">
                     <v-col v-for="card in cards" :key="card.title" cols="12" sm="6" md="4" lg="3" class="text-center">
@@ -114,13 +114,6 @@ export default {
                 flex: 6,
                 text: 'Uma API de busca por pokemons.',
                 url: 'https://pokedex-nine-wheat.vercel.app/'
-            },
-            {
-                title: 'Calculadora de Gorjetas',
-                src: require('../assets/calculadora_gorjetas_thumbnail.png'),
-                flex: 6,
-                text: 'Uma aplicação simples e prática para calcular as gorjetas e divir pelo número de pagantes.',
-                url: 'https://calculadora-de-gorjetas-pi.vercel.app/'
             },
         ],
     }),

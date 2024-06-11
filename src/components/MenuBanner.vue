@@ -8,8 +8,8 @@
         </v-btn>
 
         <v-btn :to="linkToDo" class="text-decoration-none">
-          <v-icon>mdi-format-list-checks</v-icon>
-          <h1 class="text-h6 d-none d-sm-inline-flex">Lista ToDo</h1>
+          <v-icon>mdi-clipboard-list</v-icon>
+          <h1 class="text-h6 d-none d-sm-inline-flex">Lista</h1>
         </v-btn>
 
         <v-btn :to="linkHome" class="text-decoration-none">
@@ -39,7 +39,7 @@
     <v-navigation-drawer v-model="drawer" temporary>
       <v-list nav dense>
         <v-list-item :to="linkAbout" prepend-icon="mdi-home-city" title="Home"></v-list-item>
-        <v-list-item :to="linkToDo" prepend-icon="mdi-format-list-checks" title="Lista ToDo"></v-list-item>
+        <v-list-item :to="linkToDo" prepend-icon="mdi-clipboard-list" title="Lista"></v-list-item>
         <v-list-item :to="linkHome" prepend-icon="mdi-briefcase" title="Projetos"></v-list-item>
         <v-list-item :to="linkContact" prepend-icon="mdi-email" title="Contato"></v-list-item>
         <v-list-item :to="linkAdmin" prepend-icon="mdi-account-circle" title="Administrador"></v-list-item>

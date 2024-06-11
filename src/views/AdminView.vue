@@ -11,7 +11,7 @@
 
     <v-row class="text-center">
       <v-col cols="12">
-        <h1 class="mb-5">Seção do Administrador</h1>
+        <h1 class="my-5">Seção do Administrador</h1>
       </v-col>
     </v-row>
 
