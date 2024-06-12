@@ -71,6 +71,8 @@ import LoginComponent from '../components/LoginComponent.vue';
 import { mapState, mapMutations } from 'vuex';
 import store from '../store/index'
 
+
+
 export default {
   name: "AdminView",
 
@@ -96,7 +98,7 @@ export default {
   mounted() {
     this.getContatos();
     this.loadFetching();
-    
+
 
   },
 
@@ -127,7 +129,7 @@ export default {
         this.SET_FETCHING(false);
       }
     },
-
+    
     async deleteContat(contatoId) {
       try {
         await axios.delete(`https://rafael-portfolio-back-end.vercel.app/contatos/${contatoId}`);
