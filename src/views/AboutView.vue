@@ -69,18 +69,18 @@ export default {
       ],
 
       technologies: [
+        'Nuxt 3',
+        'Vue 3',
         'Node.js',
         'Express.js',
-        'Vue.js',
         'Socket.IO',
         'MySQL',
         'MongoDB',
-        'TDD',
+        'Mongoose',
         'Javascript Avançado',
         'Vue Router',
         'Vuex',
         'Vuetify',
-        'Express'
       ]
     };
   },

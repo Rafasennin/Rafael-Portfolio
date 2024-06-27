@@ -50,14 +50,6 @@
           target="_blank" class="ml-5"></v-btn>
       </div>
       <h3 class="d-flex justify-center">Rafael Santos - Portfolio &copy; </h3>
-
-      <v-parallax height="auto" src="../assets/matrix_1.jpg">
-        <div class="d-flex align-center justify-center">
-          <v-avatar class="ma-10 opacity-80" size="200">
-            <v-img :src="img" aspect-ratio="4/3" fill></v-img>
-          </v-avatar>
-        </div>
-      </v-parallax>
     </v-navigation-drawer>
 
     <!-- Cards -->

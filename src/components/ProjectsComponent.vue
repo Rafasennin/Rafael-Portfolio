@@ -28,7 +28,7 @@
             <v-container fluid>
                 <v-row dense class="d-flex justify-center">
                     <v-col v-for="card in cards" :key="card.title" cols="12" sm="6" md="4" lg="3" class="text-center">
-                        <v-card>
+                        <v-card class="my-4">
                             <v-card-title class="text-black" v-text="card.title"></v-card-title>
                             <v-img :src="card.src" class="align-end"
                                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)" height="200px" cover>
@@ -59,6 +59,14 @@ export default {
         dialog: false,
         selectedCard: {},
         cards: [
+            {
+                title: 'Lista de Tarefas',
+                src: require('../assets/lista_de_tarefas.png'),
+                flex: 6,
+                text: 'Neste projeto "Lista de Tarefas" foi desenvolvido utilizando Vue 3 e Nuxt.js, utilizei Vuex para gerenciamento de estado e Vuetify para componentes de interface. Implementei uma estrutura segura com sessões dedicadas para cada usuário, utilizando criptografia para armazenamento seguro dos dados no MongoDB. A autenticação é realizada através de tokens JWT (JSON Web Tokens), garantindo a segurança e integridade das operações na aplicação. Este projeto tem o objetivo de aplicar conhecimentos técnicos avançados na criação de soluções funcionais e seguras.',
+                url: 'https://lista-de-tarefas-seven-red.vercel.app/'
+            },
+
             {
                 title: 'Cortes & Navalhas',
                 src: require('../assets/cortes-e-navalhas.png'),
@@ -101,20 +109,6 @@ export default {
                 text: 'O projeto "Mistery" é um jogo de adivinhação de números desenvolvido com HTML, CSS e JavaScript. O jogador é desafiado a pensar em um número, e o jogo tentará adivinhá-lo através de uma série de instruções e interações por voz. No jogo, uma saudação inicial convida o jogador a pensar em um número. Em seguida, o jogo tenta adivinhar o número através de uma série de operações matemáticas. O jogador interage com o jogo através de comandos de voz, como "próximo" para avançar para a próxima etapa e "resultado" para revelar o número final. Ao final, o jogo exibe o número adivinhado e oferece a opção de reiniciar para uma nova partida.',
                 url: 'https://mister-fortune-english-git-main-rafasennin.vercel.app/'
             },
-            {
-                title: 'Calculadora Javascript',
-                src: require('../assets/calculator-thubnail.png'),
-                flex: 6,
-                text: 'Esta é uma aplicação de calculadora simples desenvolvida em JavaScript, HTML e CSS. Ela permite realizar operações matemáticas básicas como adição, subtração, multiplicação e divisão. A interface da calculadora é composta por um display para mostrar os números e o resultado das operações, além de teclas numéricas e de operações para realizar os cálculos.',
-                url: 'https://rafasennin.github.io/JavaScript-Calculator/'
-            },
-            {
-                title: 'Pokedex',
-                src: require('../assets/pokedex_thumbnail.png'),
-                flex: 6,
-                text: 'Uma API de busca por pokemons.',
-                url: 'https://pokedex-nine-wheat.vercel.app/'
-            },
         ],
     }),
     methods: {
@@ -143,4 +137,3 @@ export default {
     },
 }
 </script>
-
