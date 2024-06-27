@@ -28,7 +28,7 @@
             <v-container fluid>
                 <v-row dense class="d-flex justify-center">
                     <v-col v-for="card in cards" :key="card.title" cols="12" sm="6" md="4" lg="3" class="text-center">
-                        <v-card class="my-4">
+                        <v-card class="ma-4">
                             <v-card-title class="text-black" v-text="card.title"></v-card-title>
                             <v-img :src="card.src" class="align-end"
                                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)" height="200px" cover>
