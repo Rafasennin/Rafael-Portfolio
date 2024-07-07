@@ -99,6 +99,7 @@ export default {
               console.error("Erro ao enviar contato:", error);
             } finally {
               this.SET_LOADING(false);
+              alert("Contato enviado com sucesso !")
             }
           } else {
             alert("Por favor, preencha todos os campos obrigatórios.");
