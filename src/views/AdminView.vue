@@ -18,17 +18,20 @@
     <v-table theme="dark" class="overflow-x-auto">
       <thead>
         <tr>
-          <th class="text-h5">
+          <th class="text-h5 text-center">
             ID
           </th>
-          <th class="text-h5">
+          <th class="text-h5 text-center">
             Nome
           </th>
-          <th class="text-h5">
+          <th class="text-h5 text-center">
             Email
           </th>
-          <th class="text-h5">
+          <th class="text-h5 text-center">
             Mensagem
+          </th>
+          <th class="text-h5 text-center">
+            Deletar
           </th>
         </tr>
       </thead>

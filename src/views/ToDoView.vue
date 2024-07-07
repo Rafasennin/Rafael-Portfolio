@@ -36,6 +36,7 @@
           <th class="text-h5 text-center">Título</th>
           <th class="text-h5 text-center">Data</th>
           <th class="text-h5 text-center">Descrição</th>
+          <th class="text-h5 text-center">Deletar</th>
         </tr>
       </thead>
       <tbody>

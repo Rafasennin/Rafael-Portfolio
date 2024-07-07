@@ -25,8 +25,8 @@
               <v-col cols="12" md="6">
                 <v-text-field label="Email" v-model="contato.email" :rules="emailRules"></v-text-field>
               </v-col>
-              <v-col cols="12">
-                <v-textarea label="Mensagem" v-model="contato.message"></v-textarea>
+              <v-col cols="12" >
+                <v-textarea label="Mensagem" v-model="contato.message" ></v-textarea>
               </v-col>
               <v-col cols="12" class="d-flex justify-center">
                 <v-btn color="primary" @click="sendContact">Enviar</v-btn>
