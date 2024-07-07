@@ -60,13 +60,19 @@ export default {
         selectedCard: {},
         cards: [
             {
+                title: 'Inventário Psicológico',
+                src: require('../assets/inventario_psicologico.png'),
+                flex: 6,
+                text: 'Este aplicativo, "Inventário Psicológico", foi desenvolvido como uma ferramenta para auxiliar no registro diário dos defeitos psicológicos e virtudes, promovendo o autoconhecimento. Através dele, é possível identificar os pontos que impedem o despertar da consciência e a liberação da essência, facilitando o desenvolvimento pessoal.',
+                url: 'https://inventario-psicologico.vercel.app/'
+            },
+            {
                 title: 'Lista de Tarefas',
                 src: require('../assets/lista_de_tarefas.png'),
                 flex: 6,
                 text: 'Neste projeto "Lista de Tarefas" foi desenvolvido utilizando Vue 3 e Nuxt.js, utilizei Vuex para gerenciamento de estado e Vuetify para componentes de interface. Implementei uma estrutura segura com sessões dedicadas para cada usuário, utilizando criptografia para armazenamento seguro dos dados no MongoDB. A autenticação é realizada através de tokens JWT (JSON Web Tokens), garantindo a segurança e integridade das operações na aplicação. Este projeto tem o objetivo de aplicar conhecimentos técnicos avançados na criação de soluções funcionais e seguras.',
                 url: 'https://lista-de-tarefas-seven-red.vercel.app/'
             },
-
             {
                 title: 'Cortes & Navalhas',
                 src: require('../assets/cortes-e-navalhas.png'),
@@ -109,6 +115,7 @@ export default {
                 text: 'O projeto "Mistery" é um jogo de adivinhação de números desenvolvido com HTML, CSS e JavaScript. O jogador é desafiado a pensar em um número, e o jogo tentará adivinhá-lo através de uma série de instruções e interações por voz. No jogo, uma saudação inicial convida o jogador a pensar em um número. Em seguida, o jogo tenta adivinhar o número através de uma série de operações matemáticas. O jogador interage com o jogo através de comandos de voz, como "próximo" para avançar para a próxima etapa e "resultado" para revelar o número final. Ao final, o jogo exibe o número adivinhado e oferece a opção de reiniciar para uma nova partida.',
                 url: 'https://mister-fortune-english-git-main-rafasennin.vercel.app/'
             },
+
         ],
     }),
     methods: {
