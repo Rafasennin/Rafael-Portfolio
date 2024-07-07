@@ -9,14 +9,14 @@
     <MenuBannerComponent />
     <v-row class="my-1">
       <v-col cols="12" class="text-center">
-        <h1>Lista De Tarefas</h1>
+        <h1>Deixe sua sugestão</h1>
       </v-col>
     </v-row>
     <form @submit.prevent="addTask">
       <v-text-field v-model="taskAuthor" label="Autor"></v-text-field>
-      <v-text-field v-model="taskName" label="Titulo da tarefa"></v-text-field>
+      <v-text-field v-model="taskName" label="Título da sugestão"></v-text-field>
       <v-text-field v-model="taskDate" label="Data de criação" readonly></v-text-field>
-      <v-textarea v-model="taskContent" label="Conteudo da Tarefa"></v-textarea>
+      <v-textarea v-model="taskContent" label="Conteudo"></v-textarea>
       <v-row>
         <v-col cols="12" class="d-flex justify-center">
           <v-btn color="primary" type="submit">Adicionar</v-btn>
@@ -32,10 +32,10 @@
     <v-table theme="dark" class="overflow-x-auto">
       <thead>
         <tr>
-          <th class="text-h5">Autor</th>
-          <th class="text-h5">Tarefa</th>
-          <th class="text-h5">Data</th>
-          <th class="text-h5">Descrição</th>
+          <th class="text-h5 text-center">Autor</th>
+          <th class="text-h5 text-center">Título</th>
+          <th class="text-h5 text-center">Data</th>
+          <th class="text-h5 text-center">Descrição</th>
         </tr>
       </thead>
       <tbody>
