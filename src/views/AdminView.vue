@@ -1,13 +1,14 @@
 <template>
   <v-container class="bg-black">
     <LoginComponent />
-    <v-row class="text-center">
+    <MenuBannerComponent />
+    <v-row class="text-center mt-5">
       <v-col cols="12">
         <h1>Rafael Portfolio</h1>
         <p>Desenvolvedor Web Full-Stack</p>
       </v-col>
     </v-row>
-    <MenuBannerComponent />
+    
 
     <v-row class="text-center">
       <v-col cols="12">

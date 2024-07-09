@@ -1,12 +1,12 @@
 <template>
   <v-container class="bg-black">
+    <MenuBannerComponent />
     <v-row class="text-center">
       <v-col cols="12">
         <h1>Rafael Portfolio</h1>
         <p>Desenvolvedor Web Full-Stack</p>
       </v-col>
     </v-row>
-    <MenuBannerComponent />
     <ProjectsComponent />
     <FooterComponent />
   </v-container>

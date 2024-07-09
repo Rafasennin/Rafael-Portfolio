@@ -1,13 +1,11 @@
 <template>
   <v-container class="bg-black">
-
-    <!-- Carousel Component -->
-    <CarouselComponent />
     <!-- Menu Banner -->
     <MenuBannerComponent />
-    
+    <!-- Carousel Component -->
+    <CarouselComponent />
+    <!-- Article Component -->
     <ArticleComponent />
-
     <!-- Seção de Sobre -->
     <v-row class="text-center mt-5">
       <v-col cols="12">

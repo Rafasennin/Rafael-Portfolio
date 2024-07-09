@@ -1,5 +1,6 @@
 <template>
   <v-container class="bg-black">
+    <MenuBannerComponent />
     <v-row class="text-center">
       <v-col cols="12">
         <h1>Rafael Portfolio</h1>
@@ -7,7 +8,7 @@
       </v-col>
     </v-row>
 
-    <MenuBannerComponent />
+   
 
     <v-row class="mt-2">
       <v-col cols="12" class="text-center">

@@ -1,48 +1,75 @@
 <template>
-  <v-container class="mt-n6">
-    <v-layout v-if="$vuetify.display.mdAndUp" class="overflow-visible" style="height: 60px;">
-      <v-bottom-navigation class="black h-100" mode="shift">
+  <v-container>
+    <v-layout v-if="$vuetify.display.mdAndUp" class="overflow-visible" style="height: 40px;">
+      <v-bottom-navigation class="pb-1 bg-grey-darken-4" mode="shift">
         <v-btn :to="linkAbout" class="text-decoration-none">
           <v-icon>mdi-home-city</v-icon>
-          <h1 class="text-h6 d-none d-sm-inline-flex">Home</h1>
+          <h1 class="text-h6 d-none d-sm-inline-flex">{{ $t('home') }}</h1>
         </v-btn>
 
         <v-btn :to="linkHome" class="text-decoration-none">
           <v-icon>mdi-briefcase</v-icon>
-          <h1 class="text-h6 d-none d-sm-inline-flex">Projetos</h1>
+          <h1 class="text-h6 d-none d-sm-inline-flex">{{ $t('projects') }}</h1>
         </v-btn>
 
         <v-btn :to="linkContact" class="text-decoration-none">
           <v-icon>mdi-email</v-icon>
-          <h1 class="text-h6 d-none d-sm-inline-flex">Contato</h1>
+          <h1 class="text-h6 d-none d-sm-inline-flex">{{ $t('contact') }}</h1>
         </v-btn>
 
         <v-btn :to="linkToDo" class="text-decoration-none">
           <v-icon>mdi-lightbulb-on</v-icon>
-          <h1 class="text-h6 d-none d-sm-inline-flex">Sugestões</h1>
+          <h1 class="text-h6 d-none d-sm-inline-flex">{{ $t('suggestions') }}</h1>
         </v-btn>
 
         <v-btn :to="linkAdmin" class="text-decoration-none">
           <v-icon>mdi-account-circle</v-icon>
-          <h1 class="text-h6 d-none d-sm-inline-flex">Admin</h1>
+          <h1 class="text-h6 d-none d-sm-inline-flex">{{ $t('admin') }}</h1>
         </v-btn>
+
+        <v-select v-model="selectedLanguage"
+          :items="locales"
+          item-title="lang"
+          item-value="abbr"
+          class="ml-6"
+          bg-color="white"
+          append-icon="mdi-translate"
+          max-width="200"
+          label="Idioma"
+          persistent-hint
+          hide-details
+          >
+        </v-select>
       </v-bottom-navigation>
     </v-layout>
-
 
     <v-app-bar color="grey-darken-4" prominent v-else>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>Menu</v-toolbar-title>
+      <v-select v-model="$i18n.locale"
+          :items="locales"
+          item-title="lang"
+          item-value="abbr"
+          class="ml-6"
+          bg-color="grey-darken-4"
+          append-icon="mdi-translate"
+          max-width="200"
+          label="Idioma"
+          persistent-hint
+          hide-details
+          >
+      </v-select>
+      
       <v-spacer></v-spacer>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" temporary>
       <v-list nav dense>
-        <v-list-item :to="linkAbout" prepend-icon="mdi-home-city" title="Home"></v-list-item>
-        <v-list-item :to="linkHome" prepend-icon="mdi-briefcase" title="Projetos"></v-list-item>
-        <v-list-item :to="linkContact" prepend-icon="mdi-email" title="Contato"></v-list-item>
-        <v-list-item :to="linkToDo" prepend-icon="mdi-lightbulb-on" title="Sugestões"></v-list-item>
-        <v-list-item :to="linkAdmin" prepend-icon="mdi-account-circle" title="Administrador"></v-list-item>
+        <v-list-item :to="linkAbout" prepend-icon="mdi-home-city translate" :title="$t('home')"></v-list-item>
+        <v-list-item :to="linkHome" prepend-icon="mdi-briefcase" :title="$t('projects')"></v-list-item>
+        <v-list-item :to="linkContact" prepend-icon="mdi-email" :title="$t('contact')"></v-list-item>
+        <v-list-item :to="linkToDo" prepend-icon="mdi-lightbulb-on" :title="$t('suggestions')"></v-list-item>
+        <v-list-item :to="linkAdmin" prepend-icon="mdi-account-circle" :title="$t('admin')"></v-list-item>
       </v-list>
       <v-divider :thickness="1" class="border-opacity-50" color="black"></v-divider>
       <div class="bg-black d-flex justify-center">
@@ -66,9 +93,11 @@
 
 <script>
 export default {
+  
   name: 'MenuBanner',
   data() {
     return {
+    
       linkAbout: "/",
       linkHome: "/projects",
       linkContact: "/contact",
@@ -81,9 +110,26 @@ export default {
         { icoo: 'mdi-linkedin', src: 'https://www.linkedin.com/in/rafael-d-santos-24a1098b' },
         { icoo: 'mdi-instagram', src: 'https://www.instagram.com/rafael.santosdev' },
       ],
+      locales: [
+        { lang: 'English', abbr: 'en' },
+        { lang: 'Portuguese', abbr: 'pt' }
+      ],
 
+      
+      selectedLanguage: this.$i18n.locale,
+      
       img: require("../assets/profile.jpg")
     };
+   
+  },
+
+
+  watch: {
+    selectedLanguage(newLanguage) {
+      console.log(newLanguage);
+      this.$i18n.locale = newLanguage;
+    }
   }
+
 };
 </script>
