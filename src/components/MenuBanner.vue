@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <v-layout v-if="$vuetify.display.mdAndUp"  class="overflow-visible" style="height: 45px;">
-      <v-bottom-navigation class="py-5 bg-grey-darken-4" height="80" mode="shift">
+    <v-layout v-if="$vuetify.display.mdAndUp"  class="overflow-visible" style="height: 60px;">
+      <v-bottom-navigation class=" bg-grey-darken-4" height="100" active>
         <v-btn :to="linkAbout" class="text-decoration-none">
           <v-icon>mdi-home-city</v-icon>
           <h1 class="text-h6 d-none d-sm-inline-flex">{{ $t('home') }}</h1>
@@ -32,6 +32,7 @@
           item-title="lang"
           item-value="abbr"
           bg-color="grey-darken-4"
+          class="mt-6"
           append-icon="mdi-translate"
           variant="filled"
           max-width="200"
