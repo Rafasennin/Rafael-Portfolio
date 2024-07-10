@@ -14,13 +14,13 @@
           <v-form class="mb-10" ref="form">
             <v-row>
               <v-col cols="12" md="6">
-                <v-text-field label="Nome" v-model="contato.name" :rules="nameRules"></v-text-field>
+                <v-text-field label="Name" v-model="contato.name" :rules="nameRules"></v-text-field>
               </v-col>
               <v-col cols="12" md="6">
                 <v-text-field label="Email" v-model="contato.email" :rules="emailRules"></v-text-field>
               </v-col>
               <v-col cols="12" >
-                <v-textarea label="Mensagem" v-model="contato.message" ></v-textarea>
+                <v-textarea label="Message" v-model="contato.message" ></v-textarea>
               </v-col>
               <v-col cols="12" class="d-flex justify-center">
                 <v-btn color="primary" @click="sendContact">{{ $t('send') }}</v-btn>
@@ -45,6 +45,8 @@ import { mapState, mapMutations } from 'vuex';
 
 
 export default {
+
+
   name: 'ContactView',
 
   components: {

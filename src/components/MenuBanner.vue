@@ -117,8 +117,9 @@ export default {
         { icoo: 'mdi-instagram', src: 'https://www.instagram.com/rafael.santosdev' },
       ],
       locales: [
-      { lang: 'English', abbr: 'en', color: 'blue' },
-      { lang: 'Português', abbr: 'pt', color: 'green' }
+      { lang: 'English', abbr: 'en' },
+      { lang: 'Português', abbr: 'pt' },
+      { lang: 'Hebrew', abbr: 'he' }
       ],
 
       

@@ -10,10 +10,10 @@
     </v-row>
    
     <form @submit.prevent="addTask" class="mt-4">
-      <v-text-field v-model="taskAuthor" label="Autor"></v-text-field>
-      <v-text-field v-model="taskName" label="Título da sugestão"></v-text-field>
-      <v-text-field v-model="taskDate" label="Data de criação" readonly></v-text-field>
-      <v-textarea v-model="taskContent" label="Conteudo"></v-textarea>
+      <v-text-field v-model="taskAuthor" label="Author"></v-text-field>
+      <v-text-field v-model="taskName" label="Title"></v-text-field>
+      <v-text-field v-model="taskDate" label="Date" readonly></v-text-field>
+      <v-textarea v-model="taskContent" label="Content"></v-textarea>
       <v-row>
         <v-col cols="12" class="d-flex justify-center">
           <v-btn color="primary" type="submit">{{ $t('add') }}</v-btn>
@@ -29,11 +29,11 @@
     <v-table theme="dark" class="overflow-x-auto">
       <thead>
         <tr>
-          <th class="text-h5 text-center">Autor</th>
-          <th class="text-h5 text-center">Título</th>
-          <th class="text-h5 text-center">Data</th>
-          <th class="text-h5 text-center">Descrição</th>
-          <th class="text-h5 text-center">Deletar</th>
+          <th class="text-h5 text-center">{{ $t('author') }}</th>
+          <th class="text-h5 text-center">{{ $t('title') }}</th>
+          <th class="text-h5 text-center">{{ $t('date') }}</th>
+          <th class="text-h5 text-center">{{ $t('text') }}</th>
+          <th class="text-h5 text-center">{{ $t('action') }}</th>
         </tr>
       </thead>
       <tbody>
@@ -72,7 +72,7 @@ export default {
     FooterComponent
   },
 
-  data() {
+  data() { 
     return {
       taskAuthor: "",
       taskName: "",
