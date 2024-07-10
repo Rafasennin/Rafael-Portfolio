@@ -87,6 +87,9 @@ const messages = {
     accessProject: 'Acesse o projeto',
     close: 'Fechar',
     learnMore: 'Saiba mais',
+    test:[
+      1,2,3,4
+    ],
     cardTitle1: 'Inventário Psicológico',
     cardText1: 'Este aplicativo, "Inventário Psicológico", foi desenvolvido como uma ferramenta para auxiliar no registro diário dos defeitos psicológicos e virtudes, promovendo o autoconhecimento. Através dele, é possível identificar os pontos que impedem o despertar da consciência e a liberação da essência, facilitando o desenvolvimento pessoal.',
     cardTitle2: 'Lista de Tarefas',

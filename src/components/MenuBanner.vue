@@ -31,7 +31,6 @@
           :items="locales"
           item-title="lang"
           item-value="abbr"
-          class="ml-6"
           bg-color="grey-darken-4"
           append-icon="mdi-translate"
           variant="filled"
@@ -46,12 +45,12 @@
 
     <v-app-bar color="grey-darken-4" prominent v-else>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Menu</v-toolbar-title>
+      <v-toolbar-title >Menu</v-toolbar-title>
       <v-select v-model="$i18n.locale"
           :items="locales"
           item-title="lang"
           item-value="abbr"
-          class="ml-6"
+          class="d-flex justify-end mr-n16 ml-12"
           bg-color="grey-darken-4"
           append-icon="mdi-translate"
           max-width="200"
