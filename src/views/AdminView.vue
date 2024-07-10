@@ -1,7 +1,7 @@
 <template>
   <v-container class="bg-black">
-    <LoginComponent />
     <MenuBannerComponent />
+    <LoginComponent />
     <v-row class="text-center mt-5">
       <v-col cols="12">
         <h1>Rafael Portfolio</h1>
