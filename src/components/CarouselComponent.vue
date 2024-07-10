@@ -1,9 +1,9 @@
 <template>
     <v-container>
-        <v-row class="text-center">
-            <v-col cols="12">
-                <h1>Rafael Santos Portfolio</h1>
-                <h3>Desenvolvedor Web Full-Stack</h3>
+        <v-row class="text-center mt-1">
+            <v-col cols="12" class="mb-4">
+                <h1>{{ $t('portfolioTitle') }}</h1>
+                <h3>{{ $t('portfolioSubtitle') }}</h3>
             </v-col>
         </v-row>
 

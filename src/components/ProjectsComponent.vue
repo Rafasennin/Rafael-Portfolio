@@ -5,24 +5,20 @@
                 <v-img :src="selectedCard.src" aspect-ratio="16/9" cover></v-img>
                 <v-card-title>{{ selectedCard.title }}</v-card-title>
                 <v-card-text>
-                    <strong>Descrição do projeto: </strong> <br>
+                    <strong>{{ $t('projectDescription') }}: </strong> <br>
                     {{ selectedCard.text }}
                     <br><br>
-                    <h4>Acesse o projeto no link abaixo:</h4>
+                    <h4>{{ $t('accessProject') }}:</h4>
                     <a :href="selectedCard.url" target="_blank">{{ selectedCard.url }}</a>
                 </v-card-text>
                 <v-card-actions>
-                    <v-btn color="primary" text @click="dialog = false">Fechar</v-btn>
+                    <v-btn color="primary" text @click="dialog = false">{{ $t('close') }}</v-btn>
                 </v-card-actions>
             </v-card>
         </v-dialog>
 
         <!-- Seção de Projetos -->
-        <v-row>
-            <v-col cols="12" class="text-center">
-                <h1>Projetos</h1>
-            </v-col>
-        </v-row>
+      
 
         <v-card class="mx-auto bg-grey-darken-4" max-width="auto">
             <v-container fluid>
@@ -35,8 +31,7 @@
                             </v-img>
 
                             <v-card-actions>
-                                <v-btn color="primary" size="small" variant="text" @click="openModal(card)">Saiba
-                                    mais</v-btn>
+                                <v-btn color="primary" size="small" variant="text" @click="openModal(card)">{{ $t('learnMore') }}</v-btn>
                                 <v-spacer></v-spacer>
 
                                 <v-btn color="surface-variant" icon="mdi-share-variant" size="small" variant="text"
@@ -142,5 +137,7 @@ export default {
         }
 
     },
+
+    
 }
 </script>

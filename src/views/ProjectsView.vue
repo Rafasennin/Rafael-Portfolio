@@ -1,10 +1,10 @@
 <template>
   <v-container class="bg-black">
     <MenuBannerComponent />
-    <v-row class="text-center">
+    <v-row class="text-center mt-5">
       <v-col cols="12">
-        <h1>Rafael Portfolio</h1>
-        <p>Desenvolvedor Web Full-Stack</p>
+        <h1>{{ $t('portfolioTitle') }}</h1>
+        <h3>{{ $t('portfolioSubtitle') }}</h3>
       </v-col>
     </v-row>
     <ProjectsComponent />

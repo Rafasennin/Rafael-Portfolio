@@ -1,19 +1,15 @@
 <template>
   <v-container class="bg-black">
     <MenuBannerComponent />
-    <v-row class="text-center">
+    
+    <v-row class="text-center mt-5">
       <v-col cols="12">
-        <h1>Rafael Portfolio</h1>
-        <p>Desenvolvedor Web Full-Stack</p>
+        <h1>{{ $t('portfolioTitle') }}</h1>
+        <h3>{{ $t('portfolioSubtitle') }}</h3>
       </v-col>
     </v-row>
    
-    <v-row class="my-1">
-      <v-col cols="12" class="text-center">
-        <h1>Deixe sua sugestão</h1>
-      </v-col>
-    </v-row>
-    <form @submit.prevent="addTask">
+    <form @submit.prevent="addTask" class="mt-4">
       <v-text-field v-model="taskAuthor" label="Autor"></v-text-field>
       <v-text-field v-model="taskName" label="Título da sugestão"></v-text-field>
       <v-text-field v-model="taskDate" label="Data de criação" readonly></v-text-field>

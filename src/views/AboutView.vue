@@ -9,16 +9,22 @@
     <!-- Seção de Sobre -->
     <v-row class="text-center mt-5">
       <v-col cols="12">
-        <h2>Background</h2>
+        <h2>{{ $t('backgroundTitle') }}</h2>
       </v-col>
     </v-row>
 
-    <!-- Background -->
-    <v-row class="d-flex justify-center">
-      <v-col cols="12" md="4" v-for="(item, index) in background" :key="index">
+   <!-- Background -->
+   <v-row class="d-flex justify-center">
+      <v-col cols="12" md="4">
         <v-card>
-          <v-card-title class="d-flex justify-center text-body-1 font-weight-black">{{ item.title }}</v-card-title>
-          <v-card-text class="d-flex justify-center">{{ item.details }}</v-card-text>
+          <v-card-title class="d-flex justify-center text-body-1 font-weight-black">{{ $t('backgroundItem1')}}</v-card-title>
+          <v-card-text class="d-flex justify-center">{{ $t('detail1') }}</v-card-text>
+        </v-card>
+      </v-col>
+      <v-col cols="12" md="4">
+        <v-card>
+          <v-card-title class="d-flex justify-center text-body-1 font-weight-black">{{ $t('backgroundItem2')}}</v-card-title>
+          <v-card-text class="d-flex justify-center">{{ $t('detail2') }}</v-card-text>
         </v-card>
       </v-col>
     </v-row>
@@ -27,7 +33,7 @@
     <!-- Skills -->
     <v-row>
       <v-col cols="12" class="d-flex justify-center">
-        <h2>Skills</h2>
+        <h2>{{ $t('skillsTitle') }}</h2>
       </v-col>
       <v-col cols="12" md="4" v-for="(technology, index) in technologies" :key="index">
         <v-card>
@@ -55,17 +61,6 @@ export default {
 
   data() {
     return {
-      background: [
-        {
-          title: 'Analise e Desenvolvimento de Sistemas',
-          details: 'Graduação pela Universidade São Francisco',
-        },
-        {
-          title: 'Bacharel em Farmácia',
-          details: 'Graduação pela Universidade São Francisco',
-        }
-      ],
-
       technologies: [
         'Nuxt 3',
         'Vue 3',
