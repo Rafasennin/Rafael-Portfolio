@@ -23,7 +23,7 @@
                 <v-textarea label="Mensagem" v-model="contato.message" ></v-textarea>
               </v-col>
               <v-col cols="12" class="d-flex justify-center">
-                <v-btn color="primary" @click="sendContact">Enviar</v-btn>
+                <v-btn color="primary" @click="sendContact">{{ $t('send') }}</v-btn>
               </v-col>
             </v-row>
             <v-row>

@@ -16,7 +16,7 @@
       <v-textarea v-model="taskContent" label="Conteudo"></v-textarea>
       <v-row>
         <v-col cols="12" class="d-flex justify-center">
-          <v-btn color="primary" type="submit">Adicionar</v-btn>
+          <v-btn color="primary" type="submit">{{ $t('add') }}</v-btn>
         </v-col>
         <v-col cols="12">
           <v-row>
