@@ -4,7 +4,7 @@
     <MenuBannerComponent />
     <!-- Carousel Component -->
     <CarouselComponent />
-    <!-- Article Component -->
+    <!-- Article Component --->
     <ArticleComponent />
     <!-- Seção de Sobre -->
     <v-row class="text-center mt-5">
