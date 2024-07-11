@@ -139,6 +139,72 @@ const messages = {
     cardTitle4: 'Mister Fortune',
     cardText4: 'O projeto "Mistery" é um jogo de adivinhação de números desenvolvido com HTML, CSS e JavaScript. O jogador é desafiado a pensar em um número, e o jogo tentará adivinhá-lo através de uma série de instruções e interações por voz. No jogo, uma saudação inicial convida o jogador a pensar em um número. Em seguida, o jogo tenta adivinhar o número através de uma série de operações matemáticas. O jogador interage com o jogo através de comandos de voz, como "próximo" para avançar para a próxima etapa e "resultado" para revelar o número final. Ao final, o jogo exibe o número adivinhado e oferece a opção de reiniciar para uma nova partida.',
   },
+  he: {
+    welcome: 'ברוך הבא',
+    task: 'משימה',
+    home: 'בית',
+    projects: 'פרויקטים',
+    contact: 'צור קשר',
+    suggestions: 'הצעות',
+    admin: 'מנהל',
+    aboutTitle: 'על עצמי',
+    aboutParagraph1: 'I am a full-stack developer with experience in freelance projects. My focus is on technologies such as Node.js, MongoDB, Vue, and Vuetify. I have dedicated my time to continuous improvement in these areas, always looking for new challenges and opportunities to develop myself.',
+    aboutParagraph2: 'After more than 15 years working in the healthcare field as a pharmacist and medical radiology technician, I have been transitioning to the technology field for over 2 years, focusing on software development. I am currently completing my degree in Systems Analysis and Development with a total emphasis on full-stack development.',
+    aboutParagraph3: 'My approach to work is characterized by dedication, focus, and openness to exploring new possibilities in the technology world. I am looking for opportunities to develop myself and am open to proposals that allow me to learn and contribute to innovative projects.',
+    backgroundTitle: 'רקע',
+    skillsTitle: 'כישורים',
+    backgroundItem1: 'ניתוח ופיתוח מערכות',
+    detail1: 'תואר מאוניברסיטת סאו פרנסיסקו',
+    backgroundItem2: 'תואר ראשון בפארמציה',
+    detail2: 'תואר מאוניברסיטת סאו פרנסיסקו',
+    portfolioTitle: 'פורטפוליו של רפאל סנטוס',
+    portfolioSubtitle: 'מפתח אינטרנט full-stack',
+    projectDescription: 'תיאור הפרויקט',
+    accessProject: 'גש לפרויקט',
+    add: 'הוסף',
+    author: 'מחבר',
+    title: 'כותרת',
+    date: 'תאריך',
+    text: 'תוכן',
+    action: 'פעולה',
+    send: 'שלח',
+    close: 'סגור',
+    learnMore: 'מידע נוסף',
+    adminSection: 'סקשן המנהל',
+    cardTitle1: 'מלאי פסיכולוגי',
+    cardText1: 'This application, "Psychological Inventory," was developed as a tool to assist in daily recording of psychological defects and virtues, promoting self-awareness. Through it, it is possible to identify the points that hinder the awakening of consciousness and the release of essence, facilitating personal development.',
+    cardTitle2: 'רשימת משימות',
+    cardText2: 'In this project "Task List," Vue 3 and Nuxt.js were used. I used Vuex for state management and Vuetify for interface components. I implemented a secure structure with dedicated sessions for each user, using encryption for safe data storage in MongoDB. Authentication is done through JWT tokens (JSON Web Tokens), ensuring the security and integrity of operations in the application. This project aims to apply advanced technical knowledge in creating functional and secure solutions.',
+    cardTitle3: 'גילופים וסכינים',
+    cardText3: `This is a service scheduling platform developed with Vue.js.
+    About the Project:
+    The goal of this project was to create an intuitive and user-friendly platform for scheduling beauty services. From the beginning,
+    I focused on developing a dynamic and responsive user interface, allowing users to easily navigate through available services,
+     choose their favorite professionals, and schedule appointments with ease.
+    Technologies Used:
+    - Vue.js: As the main framework, Vue.js was the natural choice due to its flexibility and efficiency in creating interactive user interfaces.
+
+    - Vue Router: I used Vue Router to manage the different routes of the application, ensuring a smooth navigation experience.
+
+    - Reusable Vue Components: I organized the code into reusable Vue components, which facilitated the maintenance and expansion of the project.
+
+    - Vuetify: For styling, I opted for Vuetify, a Vue.js component framework that offers a wide range of pre-designed and responsive user interface elements.
+
+    - Encoding Route Information: I implemented data encoding to pass information through the application's routes, ensuring the security and integrity of transmitted data.
+
+    Skills Demonstrated:
+    - Mastery of Vue.js: This project allowed me to deepen my knowledge of Vue.js, strengthening my skills in building dynamic web applications.
+
+    - Route Management with Vue Router: I used Vue Router to create a smooth navigation experience, ensuring that users can easily access different sections of the platform.
+
+    - Styling with Vuetify: Styling with Vuetify allowed me to create an attractive and responsive user interface, significantly enhancing the user experience.
+
+    - Secure Data Handling: I implemented data encoding techniques to ensure the security and integrity of information transmitted by the application.
+
+    Creating this project highlighted the versatility and efficiency of Vue.js in building responsive web applications in an optimized, dynamic manner with a secure data structure.
+    It is important to note that the payment component is only a representation, and it is necessary to use a secure API, such as Mercado Pago or Pagar.me. Additionally,
+    the next step will be to implement user registration integrated with the MongoDB database.`,
+  },
 };
 
 // Crie uma instância do i18n

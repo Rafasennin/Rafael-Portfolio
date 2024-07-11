@@ -119,6 +119,7 @@ export default {
       locales: [
       { lang: 'English', abbr: 'en' },
       { lang: 'Português', abbr: 'pt' },
+      { lang: 'Hebrew', abbr: 'he' }
       ],
 
       
