@@ -139,51 +139,6 @@ const messages = {
     cardTitle4: 'Mister Fortune',
     cardText4: 'O projeto "Mistery" é um jogo de adivinhação de números desenvolvido com HTML, CSS e JavaScript. O jogador é desafiado a pensar em um número, e o jogo tentará adivinhá-lo através de uma série de instruções e interações por voz. No jogo, uma saudação inicial convida o jogador a pensar em um número. Em seguida, o jogo tenta adivinhar o número através de uma série de operações matemáticas. O jogador interage com o jogo através de comandos de voz, como "próximo" para avançar para a próxima etapa e "resultado" para revelar o número final. Ao final, o jogo exibe o número adivinhado e oferece a opção de reiniciar para uma nova partida.',
   },
-  he: {
-    welcome: 'ברוך הבא',
-    task: 'משימה',
-    home: 'בית',
-    projects: 'פרויקטים',
-    contact: 'צור קשר',
-    suggestions: 'הצעות',
-    admin: 'מנהל',
-    aboutTitle: 'על עצמי',
-    aboutParagraph1: 'אני מפתח full-stack עם ניסיון בפרויקטים עצמאיים. מיקודי הוא בטכנולוגיות כמו Node.js, MongoDB, Vue ו-Vuetify. הקדשתי את זמני לשיפור קבוע בתחומים אלה, תמיד מחפש אתגרים חדשים והזדמנויות להתפתחות.',
-    aboutParagraph2: 'לאחר מעל 15 שנה של עבודה בתחום הבריאות כפורמציאן וטכנאי ברדיולוגיה רפואית, החלטתי לעבור לתחום הטכנולוגיה לפני יותר מ-2 שנים, עם מיקוד בפיתוח תוכנה. כיום אני משלים את לימודיי בניתוח ופיתוח מערכות עם דגש מוחלט על פיתוח full-stack.',
-    aboutParagraph3: 'הגישה שלי לעבודה נמדדת בהקדשה, מיקוד ופתיחות לגלות אפשרויות חדשות בעולם הטכנולוגיה. אני מחפש הזדמנויות להתפתח ופתוח להצעות שמאפשרות לי ללמוד ולתרום לפרויקטים חדשניים.',
-    backgroundTitle: 'רקע',
-    skillsTitle: 'כישורים',
-    backgroundItem1: 'ניתוח ופיתוח מערכות',
-    detail1: 'תואר מאוניברסיטת סאו פרנסיסקו',
-    backgroundItem2: 'תואר ראשון בפארמציה',
-    detail2: 'תואר מאוניברסיטת סאו פרנסיסקו',
-    portfolioTitle: 'פורטפוליו של רפאל סנטוס',
-    portfolioSubtitle: 'מפתח אינטרנט full-stack',
-    projectDescription: 'תיאור הפרויקט',
-    accessProject: 'גש לפרויקט',
-    add: 'הוסף',
-    author: 'מחבר',
-    title: 'כותרת',
-    date: 'תאריך',
-    text: 'תוכן',
-    action: 'פעולה',
-    send: 'שלח',
-    close: 'סגור',
-    learnMore: 'מידע נוסף',
-    adminSection: 'סקשן המנהל',
-    cardTitle1: 'מלאי פסיכולוגי',
-    cardText1: 'יישום זה, "מלאי פסיכולוגי", פותח ככלי לעזור ברישום יומי של פגמים פסיכולוגיים ומוסריים, ולקדם מודעות עצמית. דרך זו, אפשר לזהות את הנקודות המפריעות להתעוררות המודעות ולשחרור היצירתיות, ולקלט את התפתחות עצמית.',
-    cardTitle2: 'רשימת משימות',
-    cardText2: 'בפרויקט זה "רשימת משימות" פיתחתי באמצעות Vue 3 ו-Nuxt.js. השתמשתי ב-Vuex לניהול מצב וב-Vuetify לרכיבי ממשק. יישמתי מבנה מאובטח עם הפעלות מיוחדות לכל משתמש, והשתמשתי בהצפנה לאחסון בטוח של הנתונים ב-MongoDB. האימות מתבצע באמצעות טוקנים JWT (JSON Web Tokens), מבטיח את בטיחות ותקינות הפעולות ביישום. מטרת הפרויקט היא ליישם ידע טכני מתקדם ביצירת פתרונות פונקציונליים ומאובטחים.',
-    cardTitle3: 'גילופים וסכינים',
-    cardText3: `זו פלטפורמת תזמון שירותים שפותחה עם Vue.js.
-                על הפרויקט:
-                המטרה של פרויקט זה הייתה ליצור פלטפורמה אינטואיטיבית וידידותית למשתמש לתזמון שירותי יופי. מתחילה,
-                מיקדתי את עצמי בפיתוח ממשק משתמש דינמי וגיבוי, מאפשר למשתמשים לנווט בקלות דרך השירותים הזמינים,
-                 בחרו את המקצוענים המועדפים שלהם, ותזמן פגישות עם קלות.
-                טכנולוגיות ששימושיות:
-                במהלך הפיתוח עלי, פיתחתי תיקנתי מיטב יכולת עבודה יצירתיות, במטרה ליצור תוצאות מובנות ונמצאות, גם אם זה דורש התאמה אישית.`
-  },
 };
 
 // Crie uma instância do i18n
