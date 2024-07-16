@@ -18,7 +18,7 @@
       <v-textarea v-model="taskContent" label="Content"></v-textarea>
       <v-row>
         <v-col cols="12" class="d-flex justify-center">
-          <v-btn class="text-decoration-none bg-red-darken-4" type="submit">{{ $t('add') }}</v-btn>
+          <v-btn color="deep-purple-accent-4"  type="submit">{{ $t('add') }}</v-btn>
         </v-col>
         <v-col cols="12">
           <v-row>
