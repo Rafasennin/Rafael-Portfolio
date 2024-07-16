@@ -10,6 +10,8 @@
   "dependencies": {
     "@mdi/font": "^5.9.55",
     "@mdi/js": "^7.4.47",
+    "@tsparticles/engine": "^3.5.0",
+    "@tsparticles/vue3": "^3.0.1",
     "axios": "^1.7.2",
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
@@ -21,11 +23,15 @@
     "mongoose": "^8.4.0",
     "nodemon": "^3.1.0",
     "roboto-fontface": "*",
+    "tsparticles": "^3.5.0",
+    "tsparticles-engine": "^2.12.0",
+    "tsparticles-slim": "^2.12.0",
     "vee-validate": "^4.13.1",
     "vue": "^3.2.13",
     "vue-i18n": "^9.13.1",
     "vue-router": "^4.0.3",
     "vue-server-renderer": "^2.7.16",
+    "vue3-particles": "^2.12.0",
     "vuetify": "^3.0.0-beta.0",
     "vuex": "^4.0.0",
     "webfontloader": "^1.0.0",
@@ -40,8 +46,9 @@
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3",
+    "eslint-plugin-vue": "^8.7.1",
     "vue-cli-plugin-vuetify": "~2.5.8",
+    "vue-particles": "^1.0.9",
     "webpack-plugin-vuetify": "^2.0.0-alpha.0"
   }
 }
