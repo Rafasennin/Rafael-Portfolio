@@ -63,7 +63,7 @@
               {{ file.fileUploadDate }}
             </td>
             <td>
-                <a :href="`http://localhost:8080/files/${file._id}`" target="_blank">{{ $t('download') }}</a>
+                <a :href="`https://rafael-portfolio-back-end.vercel.app/files/${file._id}`" target="_blank">{{ $t('download') }}</a>
             </td>
             <td>
               <v-btn @click="openDeleteModal(file._id, 'file')" class="text-decoration-none bg-red-darken-4">
@@ -135,7 +135,7 @@
           files.value.forEach(file => {
               formData.append('files', file);
           });
-          await axios.post('http://localhost:8080/files', formData);
+          await axios.post('https://rafael-portfolio-back-end.vercel.app/files', formData);
           fetchFiles();
       } catch (error) {
           console.error('Erro ao fazer upload dos arquivos:', error);
@@ -148,7 +148,7 @@
   const fetchFiles = async () => {
       loadingFlag.value = true;
       try {
-          const response = await axios.get('http://localhost:8080/files');
+          const response = await axios.get('https://rafael-portfolio-back-end.vercel.app/files');
           fileList.value = response.data;
       } catch (error) {
           console.error('Erro ao buscar arquivos:', error);
@@ -160,7 +160,7 @@
   const deleteFile = async (id) => {
       loadingFlag.value = true;
       try {
-          await axios.delete(`http://localhost:8080/files/${id}`);
+          await axios.delete(`https://rafael-portfolio-back-end.vercel.app/files/${id}`);
       } catch (error) {
           console.error('Erro ao deletar arquivo:', error);
       } finally {
