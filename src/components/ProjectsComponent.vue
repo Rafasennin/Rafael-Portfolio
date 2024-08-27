@@ -52,6 +52,13 @@ export default {
     computed: {
         cards() {
             return [
+            {
+                    title: this.$t('cardTitle5'),
+                    src: require('../assets/cogumelos_saudez.png'),
+                    flex: 6,
+                    text: this.$t('cardText5'),
+                    url: 'https://cogumelosaudez.com.br/'
+                },
                 {
                     title: this.$t('cardTitle1'),
                     src: require('../assets/inventario_psicologico.png'),

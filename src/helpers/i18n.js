@@ -83,6 +83,8 @@ const messages = {
                   the next step will be to implement user registration integrated with the MongoDB database.`,
     cardTitle4: 'Mister Fortune',
     cardText4: 'The "Mistery" project is a number guessing game developed with HTML, CSS, and JavaScript. The player is challenged to think of a number, and the game will try to guess it through a series of instructions and voice interactions. In the game, an initial greeting invites the player to think of a number. Then, the game tries to guess the number through a series of mathematical operations. The player interacts with the game through voice commands, such as "next" to advance to the next step and "result" to reveal the final number. At the end, the game displays the guessed number and offers the option to restart for a new game.',
+    cardTitle5: 'Cogumelo Saudez',
+    cardText5:' The Cogumelo Saudez website is a platform dedicated to offering high-quality medicinal mushrooms, focused on promoting health and well-being through natural products. With a carefully selected range of mushrooms such as Shiitake, Reishi, and Lions Mane, the site offers both fresh varieties and potent extracts, ensuring benefits for immunity, energy, and mental clarity. In addition to exceptional products, **Cogumelo Saudez** is committed to providing detailed information about the medicinal properties of mushrooms, guiding customers in choosing the best options for their health needs.'
   },
   pt: {
     welcome: 'Bem-vindo',
@@ -164,6 +166,8 @@ const messages = {
                 o próximo passo será a implementação do cadastro de usuários, integrado ao banco de dados mondodb.`,
     cardTitle4: 'Mister Fortune',
     cardText4: 'O projeto "Mistery" é um jogo de adivinhação de números desenvolvido com HTML, CSS e JavaScript. O jogador é desafiado a pensar em um número, e o jogo tentará adivinhá-lo através de uma série de instruções e interações por voz. No jogo, uma saudação inicial convida o jogador a pensar em um número. Em seguida, o jogo tenta adivinhar o número através de uma série de operações matemáticas. O jogador interage com o jogo através de comandos de voz, como "próximo" para avançar para a próxima etapa e "resultado" para revelar o número final. Ao final, o jogo exibe o número adivinhado e oferece a opção de reiniciar para uma nova partida.',
+    cardTitle5: 'Cogumelo Saudez',
+    cardText5: 'O site Cogumelo Saudez é uma plataforma dedicada à venda de cogumelos medicinais de alta qualidade, focada em promover saúde e bem-estar através de produtos naturais. Com uma seleção cuidadosa de cogumelos como Shiitake, Reishi e Melena de Leão, o site oferece tanto versões frescas quanto extratos potentes, garantindo benefícios para a imunidade, energia e clareza mental. Além de produtos excepcionais, o **Cogumelo Saudez** se compromete a fornecer informações detalhadas sobre as propriedades medicinais dos cogumelos, orientando seus clientes na escolha ideal para suas necessidades de saúde. '
   },
   he: {
     welcome: 'ברוך הבא',
@@ -243,6 +247,8 @@ const messages = {
     Creating this project highlighted the versatility and efficiency of Vue.js in building responsive web applications in an optimized, dynamic manner with a secure data structure.
     It is important to note that the payment component is only a representation, and it is necessary to use a secure API, such as Mercado Pago or Pagar.me. Additionally,
     the next step will be to implement user registration integrated with the MongoDB database.`,
+    cardTitle5: 'Cogumelo Saudez',
+     cardText5:' The Cogumelo Saudez website is a platform dedicated to offering high-quality medicinal mushrooms, focused on promoting health and well-being through natural products. With a carefully selected range of mushrooms such as Shiitake, Reishi, and Lions Mane, the site offers both fresh varieties and potent extracts, ensuring benefits for immunity, energy, and mental clarity. In addition to exceptional products, **Cogumelo Saudez** is committed to providing detailed information about the medicinal properties of mushrooms, guiding customers in choosing the best options for their health needs.',
   },
 };
 
